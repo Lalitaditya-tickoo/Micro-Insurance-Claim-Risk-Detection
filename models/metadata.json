@@ -1,0 +1,152 @@
+{
+  "feature_columns": [
+    "months_as_customer",
+    "age",
+    "policy_state",
+    "policy_deductable",
+    "policy_annual_premium",
+    "umbrella_limit",
+    "insured_sex",
+    "insured_education_level",
+    "insured_relationship",
+    "capital-gains",
+    "capital-loss",
+    "incident_type",
+    "collision_type",
+    "incident_severity",
+    "authorities_contacted",
+    "incident_state",
+    "incident_hour_of_the_day",
+    "number_of_vehicles_involved",
+    "property_damage",
+    "bodily_injuries",
+    "witnesses",
+    "police_report_available",
+    "total_claim_amount",
+    "injury_claim",
+    "property_claim",
+    "vehicle_claim",
+    "auto_year",
+    "claim_to_premium_ratio",
+    "injury_share",
+    "is_new_customer",
+    "no_witnesses",
+    "no_police_report"
+  ],
+  "numeric": [
+    "months_as_customer",
+    "age",
+    "policy_deductable",
+    "policy_annual_premium",
+    "umbrella_limit",
+    "capital-gains",
+    "capital-loss",
+    "incident_hour_of_the_day",
+    "number_of_vehicles_involved",
+    "bodily_injuries",
+    "witnesses",
+    "total_claim_amount",
+    "injury_claim",
+    "property_claim",
+    "vehicle_claim",
+    "auto_year",
+    "claim_to_premium_ratio",
+    "injury_share",
+    "is_new_customer",
+    "no_witnesses",
+    "no_police_report"
+  ],
+  "categorical": [
+    "policy_state",
+    "insured_sex",
+    "insured_education_level",
+    "insured_relationship",
+    "incident_type",
+    "collision_type",
+    "incident_severity",
+    "authorities_contacted",
+    "incident_state",
+    "property_damage",
+    "police_report_available"
+  ],
+  "metrics": {
+    "roc_auc": 0.769,
+    "precision_fraud": 0.635,
+    "recall_fraud": 0.532,
+    "f1_fraud": 0.579,
+    "confusion_matrix": [
+      [
+        169,
+        19
+      ],
+      [
+        29,
+        33
+      ]
+    ],
+    "test_size": 250,
+    "fraud_rate": 0.247,
+    "top_features": [
+      {
+        "feature": "incident_severity_Major Damage",
+        "importance": 0.1332
+      },
+      {
+        "feature": "vehicle_claim",
+        "importance": 0.0556
+      },
+      {
+        "feature": "incident_severity_Minor Damage",
+        "importance": 0.0537
+      },
+      {
+        "feature": "claim_to_premium_ratio",
+        "importance": 0.0509
+      },
+      {
+        "feature": "property_claim",
+        "importance": 0.0504
+      },
+      {
+        "feature": "total_claim_amount",
+        "importance": 0.0453
+      },
+      {
+        "feature": "injury_claim",
+        "importance": 0.0398
+      },
+      {
+        "feature": "policy_annual_premium",
+        "importance": 0.0387
+      },
+      {
+        "feature": "months_as_customer",
+        "importance": 0.0381
+      },
+      {
+        "feature": "incident_hour_of_the_day",
+        "importance": 0.0333
+      },
+      {
+        "feature": "auto_year",
+        "importance": 0.0331
+      },
+      {
+        "feature": "incident_severity_Total Loss",
+        "importance": 0.0321
+      },
+      {
+        "feature": "age",
+        "importance": 0.0312
+      },
+      {
+        "feature": "injury_share",
+        "importance": 0.0257
+      },
+      {
+        "feature": "capital-gains",
+        "importance": 0.0255
+      }
+    ]
+  }
+}
